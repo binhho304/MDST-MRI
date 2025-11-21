@@ -28,7 +28,7 @@ def generate_gradcam(model, img, input_tensor):
     if 'resnet' in model_name:
         target_layer = model.layer4[-1].conv3  # last conv layer
     elif 'vgg' in model_name:
-        target_layer = model.features[17]      # works for your manual code
+        target_layer = model.features[17]      
 
     # Register hooks
     target_layer.register_forward_hook(forward_hook)
