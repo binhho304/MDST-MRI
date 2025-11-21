@@ -1,0 +1,8 @@
+.env/*
+mri_dataset/
+models/
+venv/
+__pycache__/
+*.dll
+*.pyd
+*.so
